@@ -17,3 +17,7 @@ spacing lg
 
 # NVM
 update-nvm
+
+spacing lg
+
+echo "Finished 🎉"
