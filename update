@@ -1,0 +1,19 @@
+# !/bin/bash
+
+# Gem
+sudo update-gem sudo
+
+spacing lg
+
+# Gem
+update-gem
+
+spacing lg
+
+# Brew
+update-brew
+
+spacing lg
+
+# NVM
+update-nvm

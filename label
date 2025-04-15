@@ -1,0 +1,22 @@
+# !/bin/bash
+
+title="Run"
+
+while getopts ":l:t:" option; do
+  case $option in
+    t) # title
+      title="$OPTARG";;
+
+    l) # label
+      label="$OPTARG";;
+
+    \?) # Invalid option
+      echo "Error: Invalid option";;
+  esac
+done
+
+if [ ! -z "$label" ]; then
+  echo "> $title: $label"
+else
+  echo "---> $title 👇"
+fi

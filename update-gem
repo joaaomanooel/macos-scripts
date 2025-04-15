@@ -1,0 +1,12 @@
+# !/bin/bash
+
+title=$1
+
+label -t "$title GEM"
+label -t "$title GEM" -l update
+gem update --verbose
+
+spacing sm
+
+label -t "$title GEM" -l cleanup
+gem cleanup

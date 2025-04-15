@@ -1,0 +1,30 @@
+# !/bin/bash
+
+# lts/gallium
+# "lts/hydrogen" 
+readonly version="lts/jod" 
+
+
+label -t NVM
+label -t NVM -l update
+(
+  cd "$NVM_DIR"
+  git fetch --tags origin
+  git checkout $(git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1))
+) && \. "$NVM_DIR/nvm.sh"
+
+spacing sm
+
+label -t NVM -l "reinstall $version"
+nvm install $version
+nvm install --reinstall-packages-from=default --latest-npm $version
+
+spacing sm
+
+label -t NVM -l "set default"
+nvm alias default $version
+
+spacing sm
+
+label -t NVM -l "cache clear"
+nvm cache clear

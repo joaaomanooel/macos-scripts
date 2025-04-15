@@ -1,0 +1,15 @@
+# !/bin/bash
+
+label -t BREW
+label -t BREW -l update
+brew update
+
+spacing sm
+
+label -t BREW -l upgrade
+brew upgrade
+
+spacing sm
+
+label -t BREW -l cleanup
+brew cleanup
