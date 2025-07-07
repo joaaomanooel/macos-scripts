@@ -28,3 +28,6 @@ spacing sm
 
 label -t NVM -l "cache clear"
 nvm cache clear
+
+
+npm i -g yarn
