@@ -20,4 +20,9 @@ update-nvm
 
 spacing lg
 
+# Zsh
+update-zsh
+
+spacing lg
+
 echo "Finished 🎉"

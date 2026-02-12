@@ -3,5 +3,3 @@
 label -t oh-my-zsh
 label -t oh-my-zsh -l update
 $ZSH/tools/upgrade.sh
-
-spacing sm
